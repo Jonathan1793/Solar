@@ -6,9 +6,12 @@ import { data } from "../data/data";
 
 export function getAsteroidNames(data) {
   // Your code goes here...
+  const asteroidsNames = [];
+  const asteroids = data.asteroids;
+
+  asteroids.map((asteroid, i) => (asteroidsNames[i] = asteroid.name));
+  return asteroidsNames;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-2"

@@ -6,9 +6,13 @@ import { data } from "../data/data";
 
 export function getAsteroidsDiscoveredAfterYear(data, year) {
   // Your code goes here...
+  const asteroids = data.asteroids;
+  const result = [];
+  asteroids.map((asteroid) =>
+    asteroid.discoveryYear > year ? result.push(asteroid.name) : null
+  );
+  return result;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-6"
