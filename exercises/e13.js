@@ -11,6 +11,9 @@ export function getAveragePlanetsTemperature(data) {
     data.planets.reduce((acc, val) => acc + val.avgTemp, 0) /
     data.planets.length
   );
+
+  /*  I tried to put it a single line, those parenthesis and multiple lines
+   are because of prettier extension that keeps changing it back on save  */
 }
 
 // === TEST YOURSELF ===

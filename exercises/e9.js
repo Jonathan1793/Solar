@@ -6,8 +6,7 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
-  const result = data.planets.filter((planet) => planet.name.includes("Earth"));
-  return result[0];
+  return data.planets.find((planet) => planet.name === "Earth");
 }
 
 // === TEST YOURSELF ===

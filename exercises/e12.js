@@ -7,9 +7,7 @@ import { data } from "../data/data.js";
 export function allPlanetsMoonsCount(data) {
   // Your code goes here...
 
-  return data.planets
-    .filter((planets) => planets.moonsCount > 0)
-    .reduce((acc, value) => acc + value.moonsCount, 0);
+  return data.planets.reduce((acc, value) => acc + (value.moonsCount || 0), 0);
 }
 
 allPlanetsMoonsCount(data);
