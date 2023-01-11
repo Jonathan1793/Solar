@@ -10,8 +10,6 @@ export function allPlanetsMoonsCount(data) {
   return data.planets.reduce((acc, value) => acc + (value.moonsCount || 0), 0);
 }
 
-allPlanetsMoonsCount(data);
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-12"
 // If the test has all tests passed, switch to the next exercise file
